@@ -1,0 +1,24 @@
+.news {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.news__article {
+  cursor: pointer;
+}
+.news__header {
+  & h2 {
+    font-size: $large;
+  }
+}
+.news__content {
+  & img {
+    width: 100%;
+    height: 200px;
+  }
+  & p {
+    padding: 5px 10px;
+    font-size: $small;
+    font-family: $mono;
+  }
+}

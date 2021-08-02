@@ -1,0 +1,49 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #us {
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+  .news {
+    grid-template-columns: 1fr 1fr;
+  }
+  .news__content {
+    & img {
+      width: 90%;
+    }
+  }
+  .newsletter {
+    grid-column: 1 / span 2;
+  }
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .nav {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .newsletter {
+    grid-column: 1 / span 3;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

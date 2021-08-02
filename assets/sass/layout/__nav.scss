@@ -1,0 +1,37 @@
+#us {
+  display: none;
+}
+.nav {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.nav__logo {
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  & h1 {
+    font-size: $xlarge;
+    font-weight: $bold;
+  }
+}
+
+.nav__links {
+  & ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: $mono;
+  }
+  & ul {
+    display: flex;
+  }
+  & li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}

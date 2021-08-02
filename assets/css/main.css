@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Ubuntu Mono", monospace;
+  display: grid;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#us {
+  display: none;
+}
+
+.nav {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.nav__logo {
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nav__logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav__links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Ubuntu Mono", monospace;
+}
+.nav__links ul {
+  display: flex;
+}
+.nav__links li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.news__article {
+  cursor: pointer;
+}
+
+.news__header h2 {
+  font-size: 24px;
+}
+
+.news__content img {
+  width: 100%;
+  height: 200px;
+}
+.news__content p {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.newsletter {
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  grid-column: 1/span 1;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.sidebar {
+  display: none;
+}
+
+.news__header-listado {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.news__header-listado h1 {
+  font-size: 28px;
+}
+
+.tags {
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.tags h1 {
+  font-size: 28px;
+}
+.tags ul {
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+.tags ul li {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+}
+
+.news__articles-destacadas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news__articles-destacadas img {
+  width: 220px;
+  height: 200px;
+}
+.news__articles-destacadas h1 {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  #us {
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .news {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news__content img {
+    width: 90%;
+  }
+
+  .newsletter {
+    grid-column: 1/span 2;
+  }
+
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .newsletter {
+    grid-column: 1/span 3;
+  }
+}
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  background-color: coral;
+  color: white;
+}
+
+.input-menu {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.group input {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
